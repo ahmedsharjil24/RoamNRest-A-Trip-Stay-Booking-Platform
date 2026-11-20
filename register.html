@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Create account | Roam-N-Rest</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="img/favicon.ico" >
+</head>
+<body data-page="register">
+<header class="site-header">
+  <nav class="nav">
+    <a class="logo" href="login.html"><img src="img/logo.svg" alt="Roam-N-Rest logo" class="logo-img">Roam-N-Rest</a>
+    <div class="nav-links">
+      <a href="transport.html">Transport</a>
+      <a href="hotels.html">Hotels</a>
+      <a href="dashboard.html">Dashboard</a>
+      <a href="profile.html">Profile</a>
+      <a href="help.html">Help</a>
+      <a href="provider.html" id="nav-provider">Become a provider</a>
+      <a href="login.html" id="nav-login">Log in</a>
+      <a href="register.html" class="btn-nav">Create account</a>
+    </div>
+  </nav>
+</header>
+  <main class="pager">
+    <p class="eyebrow">Travel, simplified</p>
+    <h1 class ="cya">Create  account</h1>
+    <p class="lead">Join and plan your next journey.</p>
+
+    <div class="auth-grid">
+      <div class="hero-card">
+        <span class="tag">Bus / Train / Air</span>
+        <h2>Less planning.<br>More travelling.</h2>
+        <span class="tag">Bangladesh, connected.</span>
+      </div>
+
+      <section class="card">
+        <h2 class="form-title">Create your account</h2>
+        <div class="notice error form-msg" id="form-msg" role="alert"></div>
+        <form id="register-form" novalidate>
+          <div class="field">
+            <label for="fullName">Full name</label>
+            <input type="text" id="fullName" name="fullName" autocomplete="name">
+            <div class="err"></div>
+          </div>
+          <div class="field">
+            <label for="email">Email address</label>
+            <input type="email" id="email" name="email" autocomplete="email">
+            <div class="err"></div>
+          </div>
+          <div class="field">
+            <label for="phone">Phone number</label>
+            <input type="tel" id="phone" name="phone" autocomplete="tel" placeholder="01XXXXXXXXX">
+            <div class="err"></div>
+          </div>
+          <div class="row">
+            <div class="field">
+              <label for="gender">Gender</label>
+              <select id="gender" name="gender">
+                <option value="">Select</option>
+                <option>Male</option>
+                <option>Female</option>
+                <option>Other</option>
+              </select>
+              <div class="err"></div>
+            </div>
+            <div class="field">
+              <label for="dob">Date of birth</label>
+              <input type="date" id="dob" name="dob" autocomplete="bday">
+              <div class="err"></div>
+            </div>
+          </div>
+          <div class="field">
+            <label for="nid">NID number</label>
+            <input type="text" id="nid" name="nid" inputmode="numeric" maxlength="17">
+            <div class="hint">10, 13 or 17 digits.</div>
+            <div class="err"></div>
+          </div>
+          <div class="field">
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password" autocomplete="new-password">
+            <div class="err"></div>
+          </div>
+          <div class="field">
+            <label for="confirm">Confirm password</label>
+            <input type="password" id="confirm" name="confirm" autocomplete="new-password">
+            <div class="err"></div>
+          </div>
+          <button type="submit" class="btn block">Create account &rarr;</button>
+        </form>
+        <p class="switch">Already registered? <a href="login.html">Log in</a></p>
+      </section>
+    </div>
+  </main>
+  <script src="app.js"></script>
+</body>
+</html>
