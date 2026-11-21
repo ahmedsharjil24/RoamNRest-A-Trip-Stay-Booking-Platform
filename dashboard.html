@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Dashboard | Roam-N-Rest</title>
+  <link rel="icon" href="img/favicon.ico" >
+  <link rel="stylesheet" href="style.css">
+</head>
+<body data-page="dashboard">
+<header class="site-header">
+  <nav class="nav">
+    <a class="logo" href="login.html"><img src="img/logo.svg" alt="Roam-N-Rest logo" class="logo-img">Roam-N-Rest</a>
+    <div class="nav-links">
+      <a href="transport.html">Transport</a>
+      <a href="hotels.html">Hotels</a>
+      <a href="dashboard.html">Dashboard</a>
+      <a href="profile.html">Profile</a>
+      <a href="help.html">Help</a>
+      <a href="provider.html" id="nav-provider">Become a provider</a>
+      <a href="login.html" id="nav-login">Log in</a>
+      <a href="register.html" class="btn-nav">Create account</a>
+    </div>
+  </nav>
+</header>
+  <main class="page">
+    <p class="eyebrow">Your trips</p>
+    <h1 id="dash-title">Dashboard</h1>
+    <p class="lead" id="dash-sub">Log in to see your bookings.</p>
+
+    <div class="grid stats">
+      <div class="card stat"><span>Upcoming trips</span><strong>2</strong></div>
+      <div class="card stat"><span>Hotel stays</span><strong>1</strong></div>
+      <div class="card stat"><span>Total bookings</span><strong>7</strong></div>
+    </div>
+
+    <section class="card table-card">
+      <h2 class="form-title">Recent bookings</h2>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>Booking</th><th>Type</th><th>Details</th><th>Date</th><th>Status</th></tr></thead>
+          <tbody>
+            <tr><td>#1042</td><td>Bus</td><td>Dhaka &rarr; Chattogram</td><td>2026-12-02</td><td>Confirmed</td></tr>
+            <tr><td>#1038</td><td>Hotel</td><td>Sea Breeze Resort</td><td>2026-12-05</td><td>Confirmed</td></tr>
+            <tr><td>#1031</td><td>Train</td><td>Dhaka &rarr; Sylhet</td><td>2026-11-10</td><td>Completed</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p class="muted" style="margin-top:12px">Sample data for design preview.</p>
+    </section>
+  </main>
+  <script src="app.js"></script>
+</body>
+</html>
