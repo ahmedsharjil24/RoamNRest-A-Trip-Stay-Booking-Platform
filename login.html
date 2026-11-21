@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Log in | Roam-N-Rest</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="img/favicon.ico" >
+</head>
+<body data-page="login">
+<header class="site-header">
+  <nav class="nav">
+    <a class="logo" href="login.html"><img src="img/logo.svg" alt="Roam-N-Rest logo" class="logo-img">Roam-N-Rest</a>
+    <div class="nav-links">
+      <a href="transport.html">Transport</a>
+      <a href="hotels.html">Hotels</a>
+      <a href="dashboard.html">Dashboard</a>
+      <a href="profile.html">Profile</a>
+      <a href="help.html">Help</a>
+      <a href="provider.html" id="nav-provider">Become a provider</a>
+      <a href="login.html" id="nav-login">Log in</a>
+      <a href="register.html" class="btn-nav">Create account</a>
+    </div>
+  </nav>
+</header>
+  <main class="page">
+    <p class="eyebrow">Travel, simplified</p>
+    <h1>Welcome back</h1>
+    <p class="lead">One place for your transport tickets and hotel stays.
+
+
+    </p>
+
+    <div class="auth-grid">
+      <div class="hero-card">
+        <span class="tag">Bus / Train / Air</span>
+        <h2>Less planning.<br>More travelling.</h2>
+        <span class="tag">Bangladesh, connected.</span>
+      </div>
+
+      <section class="card">
+        <h2 class="form-title">Log in to your account</h2>
+        <div class="notice error form-msg" id="form-msg" role="alert"></div>
+        <form id="login-form" novalidate>
+          <div class="field">
+            <label for="identifier">Email or phone</label>
+            <input type="text" id="identifier" name="identifier" autocomplete="username">
+            <div class="err"></div>
+          </div>
+          <div class="field">
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password" autocomplete="current-password">
+            <div class="err"></div>
+          </div>
+          <button type="submit" class="btn block">Log in &rarr;</button>
+        </form>
+        <p class="switch">New here? <a href="register.html">Create an account</a></p>
+        <!-- <p class="demo">Demo: passenger@gmail.com;<br>Password:</p> -->
+      </section>
+    </div>
+  </main>
+  <script src="app.js"></script>
+</body>
+</html>
