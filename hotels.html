@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Hotels | Roam-N-Rest</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="img/favicon.ico" >
+</head>
+<body data-page="hotels">
+<header class="site-header">
+  <nav class="nav">
+    <a class="logo" href="login.html"><img src="img/logo.svg" alt="Roam-N-Rest logo" class="logo-img">Roam-N-Rest</a>
+    <div class="nav-links">
+      <a href="transport.html">Transport</a>
+      <a href="hotels.html">Hotels</a>
+      <a href="dashboard.html">Dashboard</a>
+      <a href="profile.html">Profile</a>
+      <a href="help.html">Help</a>
+      <a href="provider.html" id="nav-provider">Become a provider</a>
+      <a href="login.html" id="nav-login">Log in</a>
+      <a href="register.html" class="btn-nav">Create account</a>
+    </div>
+  </nav>
+</header>
+  <main class="page">
+    <p class="eyebrow">Stays</p>
+    <h1>Book a hotel stay</h1>
+    <p class="lead">Search by city. Sample data shown.</p>
+
+    <form class="card search-bar search-one" onsubmit="return false">
+      <div class="field"><label for="city">City</label><input type="text" id="city" placeholder="Dhaka, Cox&#39;s Bazar, Sylhet..."></div>
+    </form>
+
+    <div class="grid" id="hotel-list">
+      <article class="card hotel" data-city="dhaka"><h3>Lakeview Hotel</h3><p>Gulshan, Dhaka</p><p class="muted">Free Wi-Fi &middot; Breakfast</p><div class="item-side"><strong>&#2547;5,500 / night</strong><a class="btn" href="login.html">Reserve</a></div></article>
+      <article class="card hotel" data-city="dhaka"><h3>City Inn</h3><p>Motijheel, Dhaka</p><p class="muted">Free Wi-Fi &middot; AC rooms</p><div class="item-side"><strong>&#2547;3,200 / night</strong><a class="btn" href="login.html">Reserve</a></div></article>
+      <article class="card hotel" data-city="cox&#39;s bazar"><h3>Sea Breeze Resort</h3><p>Cox&#39;s Bazar</p><p class="muted">Beach access &middot; Pool</p><div class="item-side"><strong>&#2547;7,800 / night</strong><a class="btn" href="login.html">Reserve</a></div></article>
+      <article class="card hotel" data-city="sylhet"><h3>Tea Garden Lodge</h3><p>Sylhet</p><p class="muted">Garden view &middot; Breakfast</p><div class="item-side"><strong>&#2547;4,000 / night</strong><a class="btn" href="login.html">Reserve</a></div></article>
+      <article class="card hotel" data-city="chattogram"><h3>Port View Hotel</h3><p>Agrabad, Chattogram</p><p class="muted">Free Wi-Fi &middot; Parking</p><div class="item-side"><strong>&#2547;4,600 / night</strong><a class="btn" href="login.html">Reserve</a></div></article>
+    </div>
+    <p class="notice" id="no-hotels" style="display:none;margin-top:20px">No hotels match that city.</p>
+  </main>
+  <script src="app.js"></script>
+</body>
+</html>
