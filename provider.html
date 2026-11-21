@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Become a service provider | Roam-N-Rest</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="img/favicon.ico" >
+</head>
+<body data-page="provider">
+<header class="site-header">
+  <nav class="nav">
+    <a class="logo" href="login.html"><img src="img/logo.svg" alt="Roam-N-Rest logo" class="logo-img">Roam-N-Rest</a>
+    <div class="nav-links">
+      <a href="transport.html">Transport</a>
+      <a href="hotels.html">Hotels</a>
+      <a href="dashboard.html">Dashboard</a>
+      <a href="profile.html">Profile</a>
+      <a href="help.html">Help</a>
+      <a href="provider.html" id="nav-provider">Become a provider</a>
+      <a href="login.html" id="nav-login">Log in</a>
+      <a href="register.html" class="btn-nav">Create account</a>
+    </div>
+  </nav>
+</header>
+  <main class="page">
+    <h1>Become a service provider</h1>
+    <p class="lead">Register your transport or hotel business.</p>
+
+    <section class="card provider-card" style="margin-top:40px">
+      <div class="notice error form-msg" id="form-msg" role="alert"></div>
+      <form id="provider-form" novalidate>
+        <div class="field">
+          <label for="businessName">Business / contact name</label>
+          <input type="text" id="businessName" name="businessName">
+          <div class="err"></div>
+        </div>
+        <div class="field">
+          <label for="email">Email address</label>
+          <input type="email" id="email" name="email" autocomplete="email">
+          <div class="err"></div>
+        </div>
+        <div class="field">
+          <label for="phone">Phone number</label>
+          <input type="tel" id="phone" name="phone" autocomplete="tel">
+          <div class="err"></div>
+        </div>
+        <div class="field">
+          <label for="password">Password</label>
+          <input type="password" id="password" name="password" autocomplete="new-password">
+          <div class="err"></div>
+        </div>
+        <div class="field">
+          <label for="serviceType">Service type</label>
+          <select id="serviceType" name="serviceType">
+            <option>Transport</option>
+            <option>Hotel</option>
+          </select>
+        </div>
+        <div class="notice">Demo registration is stored locally and requires admin approval.</div>
+        <button type="submit" class="btn">Submit provider application</button>
+      </form>
+    </section>
+  </main>
+  <script src="app.js"></script>
+</body>
+</html>
