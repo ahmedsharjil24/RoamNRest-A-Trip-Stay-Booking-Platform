@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Transport | Roam-N-Rest</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="img/favicon.ico" >
+</head>
+<body data-page="transport">
+<header class="site-header">
+  <nav class="nav">
+    <a class="logo" href="login.html"><img src="img/logo.svg" alt="Roam-N-Rest logo" class="logo-img">Roam-N-Rest</a>
+    <div class="nav-links">
+      <a href="transport.html">Transport</a>
+      <a href="hotels.html">Hotels</a>
+      <a href="dashboard.html">Dashboard</a>
+      <a href="profile.html">Profile</a>
+      <a href="help.html">Help</a>
+      <a href="provider.html" id="nav-provider">Become a provider</a>
+      <a href="login.html" id="nav-login">Log in</a>
+      <a href="register.html" class="btn-nav">Create account</a>
+    </div>
+  </nav>
+</header>
+  <main class="page">
+    <p class="eyebrow">Bus / Train / Air</p>
+    <h1>Find your ride</h1>
+    <p class="lead">Compare tickets across bus, train and air. Sample data shown.</p>
+
+    <form class="card search-bar" onsubmit="return false">
+      <div class="field"><label for="from">From</label><input type="text" id="from" value="Dhaka"></div>
+      <div class="field"><label for="to">To</label><input type="text" id="to" value="Chattogram"></div>
+      <div class="field"><label for="date">Date</label><input type="date" id="date"></div>
+      <button type="button" class="btn">Search</button>
+    </form>
+
+    <div class="tabs" id="mode-tabs">
+      <button class="tab active" data-mode="all">All</button>
+      <button class="tab" data-mode="bus">Bus</button>
+      <button class="tab" data-mode="train">Train</button>
+      <button class="tab" data-mode="air">Air</button>
+    </div>
+
+    <div class="list" id="trip-list">
+      <article class="item card" data-mode="bus">
+        <div class="item-main"><span class="badge">Bus</span><h3>Green Line AC</h3><p>Dhaka &rarr; Chattogram &middot; 07:00 &rarr; 13:00</p></div>
+        <div class="item-side"><strong>&#2547;1,400</strong><a class="btn" href="login.html">Book</a></div>
+      </article>
+      <article class="item card" data-mode="bus">
+        <div class="item-main"><span class="badge">Bus</span><h3>Hanif Express</h3><p>Dhaka &rarr; Chattogram &middot; 22:30 &rarr; 05:00</p></div>
+        <div class="item-side"><strong>&#2547;900</strong><a class="btn" href="login.html">Book</a></div>
+      </article>
+      <article class="item card" data-mode="train">
+        <div class="item-main"><span class="badge">Train</span><h3>Subarna Express</h3><p>Dhaka &rarr; Chattogram &middot; 06:30 &rarr; 12:00</p></div>
+        <div class="item-side"><strong>&#2547;800</strong><a class="btn" href="login.html">Book</a></div>
+      </article>
+      <article class="item card" data-mode="train">
+        <div class="item-main"><span class="badge">Train</span><h3>Mahanagar Provati</h3><p>Dhaka &rarr; Chattogram &middot; 07:30 &rarr; 13:30</p></div>
+        <div class="item-side"><strong>&#2547;650</strong><a class="btn" href="login.html">Book</a></div>
+      </article>
+      <article class="item card" data-mode="air">
+        <div class="item-main"><span class="badge">Air</span><h3>Domestic Flight</h3><p>Dhaka &rarr; Chattogram &middot; 09:00 &rarr; 09:50</p></div>
+        <div class="item-side"><strong>&#2547;4,500</strong><a class="btn" href="login.html">Book</a></div>
+      </article>
+    </div>
+  </main>
+  <script src="app.js"></script>
+</body>
+</html>
